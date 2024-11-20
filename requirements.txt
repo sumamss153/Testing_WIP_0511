@@ -3,3 +3,4 @@
 pandas
 sqlalchemy==1.4.46
 pyodbc
+pytest
