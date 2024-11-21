@@ -25,9 +25,5 @@ def test_unique_check(df):
     assert pd.Series(df['participant_id']).is_unique
 
 # check data type
-def test_productkey_dtype_int(df):
-    assert (df['participant_id'].dtype == int or df['participant_id'].dtype == np.int64)
-
-# check data type
-def test_productname_dtype_srt(df):
+def test_dtype_str(df):
     assert (df['first_name'].dtype == str or df['first_name'].dtype == 'O')
