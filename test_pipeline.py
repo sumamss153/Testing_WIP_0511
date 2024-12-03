@@ -17,8 +17,12 @@ def test_col_exists(df):
     assert name in df.columns
 
 # check for nulls
-def test_null_check(df):
+def test_null_check_pid(df):
     assert df['participant_id'].notnull().all()
+
+# check for nulls
+def test_null_check_fname(df):
+    assert df['first_name'].notnull().all()
 
 # check values are unique
 def test_unique_check(df):

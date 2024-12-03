@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>reports.html</h1>
-    <p>Report generated on 21-Nov-2024 at 13:30:46 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 03-Dec-2024 at 15:37:03 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>5 tests ran in 10.93 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>5 tests ran in 13.02 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">5 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,31 +267,42 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_pipeline.py::test_productkey_dtype_int</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">df = Empty DataFrame<br/>Columns: [participant_id, first_name, last_name, birth_date, address, phone_number, country, institute...ation, register_time, postal_code, city, github_profile, cleaned_phone_number, team_name, email, register_at]<br/>Index: []<br/><br/>    def test_productkey_dtype_int(df):<br/>&gt;       assert (df[&#x27;participant_id&#x27;].dtype == int or df[&#x27;participant_id&#x27;].dtype == np.int64)<br/><span class="error">E       AssertionError: assert (dtype(&#x27;O&#x27;) == int or dtype(&#x27;O&#x27;) == &lt;class &#x27;numpy.int64&#x27;&gt;)</span><br/><span class="error">E        +  where dtype(&#x27;O&#x27;) = Series([], Name: participant_id, dtype: object).dtype</span><br/><span class="error">E        +  and   dtype(&#x27;O&#x27;) = Series([], Name: participant_id, dtype: object).dtype</span><br/><span class="error">E        +  and   &lt;class &#x27;numpy.int64&#x27;&gt; = np.int64</span><br/><br/>test_pipeline.py:29: AssertionError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_pipeline.py::test_col_exists</td>
-          <td class="col-duration">8.59</td>
+          <td class="col-duration">12.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Empty DataFrame
-Columns: [participant_id, first_name, last_name, birth_date, address, phone_number, country, institute, occupation, register_time, postal_code, city, github_profile, cleaned_phone_number, team_name, email, register_at]
-Index: []
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>                            participant_id  ...         register_at
+0     83d9dbf8-f13d-4171-989a-8995ec10468e  ... 2021-04-05 14:45:55
+1     0bdbfe58-4916-4ea4-99ee-7f109f68a74d  ... 2021-04-05 14:46:19
+2     329b9112-e2b4-4fed-a54a-2b38c084602a  ... 2021-04-05 14:46:06
+3     ca22bcd6-aeb0-404a-9372-b355d4c89941  ... 2021-04-05 14:45:51
+4     2e8bd208-ef1f-480e-8a57-e22684ae9c10  ... 2021-04-05 14:46:50
+...                                    ...  ...                 ...
+4995  3810d4c7-9c7f-4f46-95e6-dd81ff5f9356  ... 2021-04-05 14:46:14
+4996  540a4551-222c-4508-be21-919bc920f667  ... 2021-04-05 14:46:12
+4997  37f4aed3-5e39-4620-ac1e-6b82f3ea1a8e  ... 2021-04-05 14:47:04
+4998  1abb5ace-e2f8-4ac3-90d5-cdd70838ca50  ... 2021-04-05 14:45:44
+4999  80c5fc2b-c315-42d0-9a6f-101314baff32  ... 2021-04-05 14:47:20
+
+[5000 rows x 17 columns]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_pipeline.py::test_null_check</td>
+          <td class="col-name">test_pipeline.py::test_null_check_pid</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_pipeline.py::test_null_check_fname</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -309,7 +320,7 @@ Index: []
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_pipeline.py::test_productname_dtype_srt</td>
+          <td class="col-name">test_pipeline.py::test_dtype_str</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
